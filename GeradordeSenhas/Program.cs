@@ -1,9 +1,13 @@
 ﻿using System.Collections;
+using System.Collections.Specialized;
 
 using (StreamWriter escrever = new StreamWriter("bkp.txt"))
 {
-    Random randNum = new Random();
-
+    Random randNum = new();
+    Random letraAleatoria = new ();
+    // char[] alfa = new char[] {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+    string [] beto = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+    Console.WriteLine(beto[0]);
     Console.WriteLine("Gerador de senhas");
 
     Console.WriteLine("Insira a quantidade de caracteres que deseja na senha:");
@@ -15,28 +19,37 @@ using (StreamWriter escrever = new StreamWriter("bkp.txt"))
         Console.WriteLine("4 - Números, letras e caracteres especiais");
         Console.WriteLine("5 - Somente Letras");
         Console.WriteLine("6 - Letras e caracteres especiais");
-        
-        int senhagerada;
+
         int simbolos = int.Parse(Console.ReadLine());
+        int senhagerada;
+        string senhagerada2;
         switch (simbolos)
         {
             case 1:
 
-                for (int a = 1; a <= tamanhoSenha; a++)
+                for (int a = 0; a < tamanhoSenha; a++)
                 {
-                    senhagerada = randNum.Next(1, 60);
-                    if (senhagerada < 10)
-                    {
-                        Console.Write($"{senhagerada}");
-                    }
-                    else
-                    {
-                        Console.Write($"{senhagerada}");
-                    }
+                    senhagerada = randNum.Next(1, 9);
+                    Console.Write($"{senhagerada}");
+                    escrever.WriteLine($"{senhagerada}");
                 }
                 break;
-        }
+            case 2:
+            for (int b = 0; b < tamanhoSenha; b++){
+                var letraAleat = letraAleatoria.Next(beto.Length);
+                senhagerada = randNum.Next(1, 9);
+                senhagerada2 = beto[letraAleat];
+                
+                Console.Write(senhagerada);
+                Console.Write(senhagerada2);
 
+                // Console.Write();
+            }
+
+
+            break;
+
+        }
     }
 }
 
