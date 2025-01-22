@@ -5,12 +5,13 @@ using (StreamWriter escrever = new StreamWriter("bkp.txt"))
 {
     Random randNum = new();
     Random letraAleatoria = new ();
-    // char[] alfa = new char[] {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+    // char[] alfa = new char[] {"a","b","c ","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
     string [] beto = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+    string [] gama = {"0","1","2","3","4","5","6","7","8","9",};
     Console.WriteLine(beto[0]);
     Console.WriteLine("Gerador de senhas");
 
-    Console.WriteLine("Insira a quantidade de caracteres que deseja na senha:");
+    Console.Write("Insira a quantidade de caracteres que deseja na senha: ");
     if (int.TryParse(Console.ReadLine(), out int tamanhoSenha))
     {
         Console.WriteLine("1 - Somente números na senha");
@@ -21,7 +22,7 @@ using (StreamWriter escrever = new StreamWriter("bkp.txt"))
         Console.WriteLine("6 - Letras e caracteres especiais");
 
         int simbolos = int.Parse(Console.ReadLine());
-        int senhagerada;
+        string senhagerada;
         string senhagerada2;
         switch (simbolos)
         {
@@ -29,18 +30,21 @@ using (StreamWriter escrever = new StreamWriter("bkp.txt"))
 
                 for (int a = 0; a < tamanhoSenha; a++)
                 {
-                    senhagerada = randNum.Next(1, 9);
+                    var numAleat = randNum.Next(gama.Length);
+                    senhagerada = gama[numAleat];
                     Console.Write($"{senhagerada}");
-                    escrever.WriteLine($"{senhagerada}");
+                    // escrever.WriteLine($"{senhagerada}");
                 }
                 break;
             case 2:
             for (int b = 0; b < tamanhoSenha; b++){
                 var letraAleat = letraAleatoria.Next(beto.Length);
-                senhagerada = randNum.Next(1, 9);
-                senhagerada2 = beto[letraAleat];
+                // senhagerada = randNum.Next(1, 9);
                 
-                Console.Write(senhagerada);
+                senhagerada2 = beto[letraAleat];
+
+                // Console.Write(senhagerada);
+                
                 Console.Write(senhagerada2);
 
                 // Console.Write();
