@@ -74,7 +74,7 @@ using (StreamWriter escrever = new StreamWriter("bkp.txt"))
                 for (int d = 0; d < caractNaSenha; d++)
                 {
 
-                    char[] delta = new char[] {'(', ')', '{', '}', '[', ']', '/',  ';', ':', '.', ',', '?', '!', '+', '-', '*', '=', '<', '>', '%', '#', '@', '^', '&', '_', '~', '`', '$', '|'};
+                    char[] delta = new char[] { '(', ')', '{', '}', '[', ']', '/', ';', ':', '.', ',', '?', '!', '+', '-', '*', '=', '<', '>', '%', '#', '@', '^', '&', '_', '~', '`', '$', '|' };
 
                     var randomIndex = Random.Next(delta.Length);
 
@@ -96,6 +96,57 @@ using (StreamWriter escrever = new StreamWriter("bkp.txt"))
                     Console.Write(index3);
 
                 }
+                break;
+
+            case 4:
+                Console.Write("Quantas letras você quer na senha:");
+                int letrasCaracteres = int.Parse(Console.ReadLine());
+
+                Console.Write("Quantos caracteres especiais você quer na senha:");
+                int caracteresLetras = int.Parse(Console.ReadLine());
+
+                char index4;
+                char index5;
+
+                for (int b = 0; b < letrasCaracteres; b++)
+                {
+                    char[] alfa = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+
+                    var randomIndex = Random.Next(alfa.Length);
+
+                    index4 = alfa[randomIndex];
+                    Console.Write(index4);
+                }
+                for (int d = 0; d < caracteresLetras; d++)
+                {
+
+                    char[] delta = new char[] { '(', ')', '{', '}', '[', ']', '/', ';', ':', '.', ',', '?', '!', '+', '-', '*', '=', '<', '>', '%', '#', '@', '^', '&', '_', '~', '`', '$', '|' };
+
+                    var randomIndex = Random.Next(delta.Length);
+
+                    index2 = delta[randomIndex];
+                    Console.Write(index2);
+                }
+                // if
+                for (int c = 0; c < tamanhoSenha - letrasCaracteres - caracteresLetras; c++)
+                {
+                    gama = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+
+                    var randomIndex1 = Random.Next(gama.Length);
+
+                    index5 = gama[randomIndex1];
+
+                    Console.Write(index5);
+                }
+
+                // s
+                // char index4;
+
+
+                // for (int f = 0; f < letrasCaracteres; f++)
+                // {
+
+                // }
                 break;
         }
     }
