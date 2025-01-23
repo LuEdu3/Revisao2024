@@ -139,14 +139,6 @@ using (StreamWriter escrever = new StreamWriter("bkp.txt"))
                     Console.Write(index5);
                 }
 
-                // s
-                // char index4;
-
-
-                // for (int f = 0; f < letrasCaracteres; f++)
-                // {
-
-                // }
                 break;
         }
     }
