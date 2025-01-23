@@ -149,10 +149,39 @@ using (StreamWriter escrever = new StreamWriter("bkp.txt"))
                     Console.Write(index);
                 }
 
-            break;
+                break;
+
+            case 6:
+
+                Console.Write("Quantos caracteres especiais você quer na senha:");
+                caracteresLetras = int.Parse(Console.ReadLine());
+
+                for (int d = 0; d < caracteresLetras; d++)
+                {
+
+                    char[] delta = new char[] { '(', ')', '{', '}', '[', ']', '/', ';', ':', '.', ',', '?', '!', '+', '-', '*', '=', '<', '>', '%', '#', '@', '^', '&', '_', '~', '`', '$', '|' };
+
+                    var randomIndex = Random.Next(delta.Length);
+
+                    index2 = delta[randomIndex];
+                    Console.Write(index2);
+                }
+
+                for (int b = 0; b < tamanhoSenha - caracteresLetras; b++)
+                {
+                    char[] alfa = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+
+                    var randomIndex = Random.Next(alfa.Length);
+
+                    index = alfa[randomIndex];
+                    Console.Write(index);
+                }
+
+                break;
         }
     }
 }
+
 
 // Random randNum = new Random();
 // int num = randNum.Next(1,60);
