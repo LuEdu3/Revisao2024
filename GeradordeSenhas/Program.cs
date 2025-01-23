@@ -39,9 +39,11 @@ using (StreamWriter escrever = new StreamWriter("bkp.txt"))
             case 2:
 
                 Console.Write("Quantas letras você quer:");
-                int letraNaSenha = int.Parse(Console.ReadLine());
                 char index;
 
+                if(int.TryParse(Console.ReadLine(),out int letraNaSenha)){
+
+                
                 for (int b = 0; b < letraNaSenha; b++)
                 {
                     char[] alfa = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
@@ -64,6 +66,7 @@ using (StreamWriter escrever = new StreamWriter("bkp.txt"))
                     Console.Write(index1);
                 }
                 // senhagerada = randNum.Next(1, 9);
+                }
                 break;
             case 3:
 
