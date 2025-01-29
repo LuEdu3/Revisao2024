@@ -24,3 +24,8 @@
     width: 100vw;
     height: 500px;
 }
+.col-6{
+    position: relative;
+    top: -15em;
+    display: inline;
+}
