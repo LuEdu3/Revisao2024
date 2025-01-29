@@ -24,6 +24,10 @@
     width: 100vw;
     height: 500px;
 }
+
+.retangulo{
+    border: black solid 1px;
+}
 .col-6{
     position: relative;
     top: -15em;
