@@ -21,6 +21,6 @@
 /* MAIN */
 
 .imagem-adaptada img{
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 500px;
 }
