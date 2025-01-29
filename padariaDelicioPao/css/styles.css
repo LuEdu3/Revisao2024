@@ -2,5 +2,17 @@
 .nav-link{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 13px;
-    font
+    
+}
+
+.nav-link{
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    color: #000; /* Cor do texto */
+}
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
 }
