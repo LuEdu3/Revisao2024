@@ -24,7 +24,11 @@
     width: 100vw;
     height: 500px;
 }
+.row-container{
+    display: flex;
+    width: fit-content;
 
+}
 .retangulo{
     border: black solid 1px;
 }
