@@ -53,7 +53,24 @@
 .escolha-hoje{
     border: black solid 2px;
     margin: 1% 10%;
+    width: 100em;
+    height: 500px;
 }
 .escolha-hoje .col-3{
     border: black solid 2px;
+    margin: 1% 1%;
+    display: inline;
+
+}
+.today{
+    width: 10%;
+    display: inline;
+}
+.cards{
+    
+    display: inline;
+}
+.teste{
+    width: 10%;
+    display: inline;
 }
