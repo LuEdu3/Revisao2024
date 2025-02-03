@@ -20,6 +20,9 @@
 
 /* MAIN */
 
+.grupo-foto-texto{
+    height: 500px;
+}
 .imagem-adaptada img{
     width: 100vw;
     height: 500px;
@@ -44,4 +47,13 @@
     align-content: center;
     width: 100vw;
     text-align: center;
+}
+
+/* SECTION ESCOLHA */
+.escolha-hoje{
+    border: black solid 2px;
+    margin: 1% 10%;
+}
+.escolha-hoje .col-3{
+    border: black solid 2px;
 }
