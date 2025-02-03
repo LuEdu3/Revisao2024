@@ -27,13 +27,20 @@
 .row-container{
     display: flex;
     width: fit-content;
-
 }
 .retangulo{
-    border: black solid 1px;
+    
+    width: 50vw;
+    height: 50vh;
+    display: flex;
 }
 .col-6{
     position: relative;
-    top: -15em;
+    top: -31em;
     display: inline;
+}
+.texto-retangulo{
+    align-content: center;
+    width: 100vw;
+    text-align: center;
 }
