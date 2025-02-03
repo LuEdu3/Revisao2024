@@ -25,18 +25,18 @@
     height: 500px;
 }
 .row-container{
+    top: -31em;
+    position: relative;
     display: flex;
     width: fit-content;
 }
 .retangulo{
-    
     width: 50vw;
     height: 50vh;
     display: flex;
 }
 .col-6{
     position: relative;
-    top: -31em;
     display: inline;
 }
 .texto-retangulo{
