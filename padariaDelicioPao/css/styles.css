@@ -76,9 +76,7 @@
 
 /* IMAGENS ESCOLHA HOJE */
 .coluna-hoje{
-
+ width: 100%;
+ height: auto;
 }
 
-.imagem-hoje{
-    border-radius: 50%;
-}
