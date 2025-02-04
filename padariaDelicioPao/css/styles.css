@@ -60,13 +60,13 @@
 
 /* SECTION ESCOLHA */
 .escolha-hoje {
-    border: black solid 2px;
+    /* border: black solid 2px; */
     margin: 1% 10%;
-    height: 500px;
+    height: 250px;
 }
 
 .escolha-hoje .col-3 {
-    border: black solid 2px;
+    /* border: black solid 2px; */
     margin: 1% 1%;
     display: inline;
 
@@ -78,7 +78,7 @@
 }
 
 .cards {
-    border: #000 solid 10px;
+    /* border: #000 solid 10px; */
     width: 300px;
     display: inline;
 }
@@ -89,5 +89,6 @@
 
 /* IMAGENS ESCOLHA HOJE */
 .coluna-hoje {
-    border: black solid 10px;
+    /* border: black solid 10px; */
+
 }
